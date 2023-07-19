@@ -1,3 +1,9 @@
 :root{
-    
+    --color--01: #101010;
+    --color--02: #0e0e0e;
+    --color--03: #202020;
+    --color--04: #000;
+    --color--05: #fff;
+
+    --font--01: 'Kanit', sans-serif;
 }
