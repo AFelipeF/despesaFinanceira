@@ -1,0 +1,67 @@
+body {
+    background: #0e0e0e !important;
+    height: 120vh;
+}
+
+.container-financeiro {
+    padding: 0 6.5rem
+}
+
+.content-body {
+    background: #202020;
+    height: 80vh;
+}
+
+.sessao-financeiro {
+    position: relative;
+}
+
+.sessao-financeiro .content-header {
+    font-family: 'Kanit', sans-serif;
+    background: #101010 !important;
+    vertical-align: middle;
+    padding: 3rem 0 5rem 0;
+}
+
+.sessao-financeiro .content-header h1 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+}
+
+.card {
+    padding: 0 27rem;
+    position: absolute !important;
+    background: transparent !important;
+    top: 12%;
+}
+
+.card .card-ch {
+    width: 68.7rem;
+    background-color: #000;
+    border-radius: .7rem;
+    padding: 1rem 0;
+}
+
+.card .card-middle {
+    padding: 1.3rem 2.3rem !important;
+}
+
+.card .card-middle input,
+.card .card-middle select,
+.card .card-middle option {
+    padding: .5rem .4rem !important;
+    border-radius: .4rem !important;
+}
+
+table,
+table tr,
+table td,
+table th,
+.card-bottom {
+    background: #000 !important;
+}
+
+.table-spacing tbod tr {
+    margin-bottom: 20px !important;
+}
