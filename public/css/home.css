@@ -1,62 +1,134 @@
 body{
-    background-color: rgb(53, 53, 53)!important;
+    background-color: var(--color--body)!important;
     }
 
 .container-financeiro{
     padding: 0 7.4rem;
 }
-
+.sessao-financeiro{
+    background-color: var(--color--cBody);
+    height: 91vh
+}
+.content-header{
+    position: relative;
+}
 .dd {
     display:flex;
     justify-content: space-between;
-    margin: 1rem 2rem;
+    margin: 0 2rem 0 0;
+    padding: 0rem .5rem;
+    text-align: center;
+
     
+}
+.dd li {
+    font-weight: bolder;
+}
+.dd li span{
+    font-size: 1rem;
+}
+.dd li p{
+    font-size: 1.3rem;
+    padding-top: 0.35rem;
 }
 
 .dd2 {
     display: flex;
     justify-content: space-between;
-    margin: 1px 0px 1px 0px
+    margin: 1px 0px 1px 0px;
+    padding: 01rem 0;
+    
     
 }
+.dd2 label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    transition: .5s ease-out;
+}
+.dd2 input{
+    border-radius: .5rem;
+    width: 100%;
+    padding: .5rem .5rem;
+    color: #fff !important;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.dd2 input:focus ~ label, .dd2 input:placeholder-shown ~ label, .dd2 label.validLabel{
+    top: -13px!important;
+    left: 25px;
+    background-color: #000;
+    padding: 0;
+    border-radius: .5rem;
+    z-index: 5;
+}
+.dd2 li{
+    margin-right: 1rem;
+    position: relative;
+
+}
+.dd2 li#dataContent{
+    width: 25%;
+}
+.dd2 li#categoriaContent{
+    width: 24%;
+}
+.dd2 li#titleContent{
+    width: 13%;
+}
+.dd2 li#numeroContent{
+    width: 13%;
+}
+.dd2 li#buttonContent{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    margin: 0 ;
+}
 .button {
-    border-radius: 1rem;
+    border-radius: .5rem;
     background-color: var(--cor-primaria-success);
     color: white !important;
-    padding: 0.4rem ;
-    width: 120px;
-    margin: 15px;
+    padding: 0.6rem 0 ;
+    width: 100%;
+    margin: 10px 0;
     margin-block-end: 5px;
     cursor: pointer;
 }
+.button:hover{
+    background-color:rgba(41, 166, 41, 0.4) ;
+}
 .sessao-financeiro .content-header h1#title{
     text-align: center;
-    font-family: var(--font--title);
-    padding: 3rem ;
-    margin: 1rem .1;
-    background-color: black;
+    padding: 5rem ;
+    background-color: var(--color--header);
     color: white!important;
-    border-radius: 1.5rem;
+    letter-spacing: 1.6px;
+    font-family: var(--font--title);
+    font-size: 2.6rem;
+    font-weight:bolder;
+
+}
+.content-box{
+    width: 100%;
+    position: absolute;
+    top: 68%;
 }
 .box{
     background-color: black;
-    padding: 2rem;
+    padding: .8rem 2rem;
     color: white !important;
-    margin: 1rem 0;
-    border-radius: 1.5rem;
-    
+    margin: 1rem auto !important;
+    border-radius: 1rem;
+    width: 75%;
 }
-.box1{
-    background-color: black;
-    padding: 2rem;
-    color: white !important;
-    margin: 1rem 0;
-    border-radius: 1.5rem;
 
-}
-.dd2 input{
-    padding: 1px;
-    border-radius:1.5rem ;
-}
+
     
     

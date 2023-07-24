@@ -104,50 +104,59 @@
                 <div class="content">
                     <div class="content-header">
                         <h1 id="title"> Controle Financeiro</h1>
-                    <div id="boxx">
-                        <div class="box">
-                            <ul class="dd">
-                                <li class="d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-left-long text-light h4"></i>
-                                    <h4 class="text-light fw-bold mx-5"> Feveireiro de 2023 </h4>
-                                    <i class="fa-solid fa-right-long text-light h4"></i>
-                                </li>
-                                <li>Receita</li>
-                                <li>Despesas</li>
-                                <li>Balanço</li>
-                            </ul>
-                        </div>
-                    </div>
-                        <div class="box">
-                            <ul class="dd2">
-                                <li>
-                                    <label for="data">Data</label> <br>
-                                    <input type="date" name="data" id="data">
-                                </li>
-                                <li>
-                                    <label for="categoria">Categoria</label> <br>
-                                    <input type="text" id="categoria">
-                                </li>
-                                <li>
-                                    <label for="titulo">Titulo</label> <br>
-                                    <input type="text" name="titulo" id="titulo">
-                                </li>
-                                <li>
-                                    <label for="numero">Valor</label> <br>
-                                    <input type="number" name="numero" id="numero">
-                                </li>
-                                <li>
-                                    <button class="button">Adicionar</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box1">
-                            <ul class="dd">
-                                <li>Data</li>
-                                <li>Categoria</li>
-                                <li>Titulo</li>
-                                <li id="Afasta">Valor</li>
-                            </ul>
+                        <div class="content-box">
+                            <div class="box" id="box-top">
+                                <ul class="dd">
+                                    <li class="d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-left-long text-light h4"></i>
+                                        <h4 class="text-light fw-bold mx-5"> Feveireiro de 2023 </h4>
+                                        <i class="fa-solid fa-right-long text-light h4"></i>
+                                    </li>
+                                    <li>
+                                        <spam>Receita</spam>
+                                        <p class="text-success">R$ 1.200</p>
+                                    </li>
+                                    <li>
+                                        <spam>Despesas</spam>
+                                        <p class="text-danger">R$ 1.200</p>
+                                    </li>
+                                    <li>
+                                        <spam>Balanço</spam>
+                                        <p class="text-success">R$ 1.200</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box" id="box-middle">
+                                <ul class="dd2">
+                                    <li id="dataContent">
+                                        <input type="date" name="data" id="data" value="1991-06-11">
+                                        <label for="data">Data</label> 
+                                    </li>
+                                    <li id="categoriaContent">
+                                        <input type="text" id="categoria">
+                                        <label for="categoria">Categoria</label> 
+                                    </li>
+                                    <li id="titleContent">
+                                        <input type="text" name="titulo" id="titulo">
+                                        <label for="titulo">Titulo</label> 
+                                    </li>
+                                    <li id="numeroContent">
+                                        <input class="input-number" type="number" name="numero" id="numero">
+                                        <label for="numero">Valor</label> 
+                                    </li>
+                                    <li id="buttonContent">
+                                        <button class="button">Adicionar</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box" id="box-botton">
+                                <ul class="dd">
+                                    <li>Data</li>
+                                    <li>Categoria</li>
+                                    <li>Titulo</li>
+                                    <li id="Afasta">Valor</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,15 +166,21 @@
 </body>
 
 </html>
-<!-- <div class="box">
-    <ul class="dd">
-        <li class="d-flex justify-content-center align-items-center">
-            <i class="fa-solid fa-left-long text-light h4"></i>
-            <h4 class="text-light fw-bold mx-5"> Feveireiro de 2023 </h4>
-            <i class="fa-solid fa-right-long text-light h4"></i>
-        </li>
-        <li>Receita</li>
-        <li>Despesas</li>
-        <li>Balanço</li>
-    </ul>
-</div> -->
+<script>
+    const changeLabel = () => {
+        $('.dd2 li input').each((_,e) => {
+            if(e.value != ''){
+                $('.dd2 li label')[_].classList.add('validLabel')
+            }else{
+                $('.dd2 li label')[_].classList.remove('validLabel')
+            }
+        })
+    }
+    $(document).ready(
+        changeLabel()
+    )
+    $('.dd2 li input').on('click input change', () => {
+        changeLabel()
+    })
+    
+</script>
