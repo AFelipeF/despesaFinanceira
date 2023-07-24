@@ -1,67 +1,62 @@
-body {
-    background: #0e0e0e !important;
-    height: 120vh;
+body{
+    background-color: rgb(53, 53, 53)!important;
+    }
+
+.container-financeiro{
+    padding: 0 7.4rem;
 }
 
-.container-financeiro {
-    padding: 0 6.5rem
+.dd {
+    display:flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    
 }
 
-.content-body {
-    background: #202020;
-    height: 80vh;
+.dd2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px 0px 1px 0px
+    
 }
+.button {
+    border-radius: 1rem;
+    background-color: var(--cor-primaria-success);
+    color: white !important;
+    padding: 0.4rem ;
+    width: 120px;
+    margin: 15px;
+    margin-block-end: 5px;
+    cursor: pointer;
+}
+.sessao-financeiro .content-header h1#title{
+    text-align: center;
+    font-family: var(--font--title);
+    padding: 3rem ;
+    margin: 1rem .1;
+    background-color: black;
+    color: white!important;
+    border-radius: 1.5rem;
+}
+.box{
+    background-color: black;
+    padding: 2rem;
+    color: white !important;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+    
+}
+.box1{
+    background-color: black;
+    padding: 2rem;
+    color: white !important;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
 
-.sessao-financeiro {
-    position: relative;
 }
-
-.sessao-financeiro .content-header {
-    font-family: 'Kanit', sans-serif;
-    background: #101010 !important;
-    vertical-align: middle;
-    padding: 3rem 0 5rem 0;
+.dd2 input{
+    padding: 1px;
+    border-radius:1.5rem ;
 }
-
-.sessao-financeiro .content-header h1 {
-    font-weight: bolder;
-    font-size: 2.4rem;
-    letter-spacing: .1rem;
-}
-
-.card {
-    padding: 0 27rem;
-    position: absolute !important;
-    background: transparent !important;
-    top: 12%;
-}
-
-.card .card-ch {
-    width: 68.7rem;
-    background-color: #000;
-    border-radius: .7rem;
-    padding: 1rem 0;
-}
-
-.card .card-middle {
-    padding: 1.3rem 2.3rem !important;
-}
-
-.card .card-middle input,
-.card .card-middle select,
-.card .card-middle option {
-    padding: .5rem .4rem !important;
-    border-radius: .4rem !important;
-}
-
-table,
-table tr,
-table td,
-table th,
-.card-bottom {
-    background: #000 !important;
-}
-
-.table-spacing tbod tr {
-    margin-bottom: 20px !important;
-}
+    
+    

@@ -35,6 +35,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/public/ico/favicon-16x16.png">
     <link rel="manifest" href="/public/ico/site.webmanifest">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- JS -->
     <script src="/public/js/script.js" defer></script>
     <script src="/public/js/toggle-mode.js" defer></script>
@@ -56,9 +61,9 @@
 </head>
 
 <body>
-    <header class="bg-light">
+    <header class="bg-dark">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <div class="row w-100">
                         <!-- ESQUERDA -->
@@ -67,12 +72,12 @@
                                 <!-- LOGO -->
                                 <li class="nav-item">
                                     <a class="navbar-brand mt-2 mt-lg-0" href="/">
-                                        <img src="../public/img/logo-light.png" height="25" width="25" id="logoHeader">
+                                        <img src="../public/img/logo-dark.png" height="25" width="25" id="logoHeader">
                                     </a>
                                 </li>
                                 <!-- Menus -->
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                                 </li>
 
                             </ul>
@@ -98,50 +103,69 @@
             <section class="sessao-financeiro">
                 <div class="content">
                     <div class="content-header">
-                        <h1> Controle Financeiro</h1>
-                        <thead>
-                            <ul>
-                            <li>Receita</li>
-                            <li>Despesas</li>
-                            <li>Balanço</li>
+                        <h1 id="title"> Controle Financeiro</h1>
+                    <div id="boxx">
+                        <div class="box">
+                            <ul class="dd">
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-left-long text-light h4"></i>
+                                    <h4 class="text-light fw-bold mx-5"> Feveireiro de 2023 </h4>
+                                    <i class="fa-solid fa-right-long text-light h4"></i>
+                                </li>
+                                <li>Receita</li>
+                                <li>Despesas</li>
+                                <li>Balanço</li>
                             </ul>
-                        </thead>
-                        <tbody>
-                            <ul>
-                                <li>Data</li>
-                                <input type="date" name="data" id="data">
-                                <li>Categoria</li>
-                                <input type="text">
-                                <li>Titulo</li>
-                                <input type="text" name="titulo" id="titulo">
-                                <li>Valor</li>
-                                <input type="number" name="numero" id="numero">
-                            </ul>
-                        </tbody>
-                    </div>
-                    <div class="content-body">
-                        <div class="card">
-                            <div class="card-top">
-
-                            </div>
-                            <div class="card-middle">
-                                <form action="#">
-                                    <small>
-
-                                    </small>
-                                </form>
-                            </div>
-                            <div class="card-bottom">
-                                <table>
-
-                                </table>
-                            </div>
                         </div>
                     </div>
+                        <div class="box">
+                            <ul class="dd2">
+                                <li>
+                                    <label for="data">Data</label> <br>
+                                    <input type="date" name="data" id="data">
+                                </li>
+                                <li>
+                                    <label for="categoria">Categoria</label> <br>
+                                    <input type="text" id="categoria">
+                                </li>
+                                <li>
+                                    <label for="titulo">Titulo</label> <br>
+                                    <input type="text" name="titulo" id="titulo">
+                                </li>
+                                <li>
+                                    <label for="numero">Valor</label> <br>
+                                    <input type="number" name="numero" id="numero">
+                                </li>
+                                <li>
+                                    <button class="button">Adicionar</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box1">
+                            <ul class="dd">
+                                <li>Data</li>
+                                <li>Categoria</li>
+                                <li>Titulo</li>
+                                <li id="Afasta">Valor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
 </body>
 
 </html>
-a
+<!-- <div class="box">
+    <ul class="dd">
+        <li class="d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-left-long text-light h4"></i>
+            <h4 class="text-light fw-bold mx-5"> Feveireiro de 2023 </h4>
+            <i class="fa-solid fa-right-long text-light h4"></i>
+        </li>
+        <li>Receita</li>
+        <li>Despesas</li>
+        <li>Balanço</li>
+    </ul>
+</div> -->
